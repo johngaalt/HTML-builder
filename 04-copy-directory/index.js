@@ -31,11 +31,6 @@ async function copyDirectory() {
   console.log('Файлы скопированы');
 }
 
-
-
-
-
-
 copyDirectory().catch(console.error);
 
 
