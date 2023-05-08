@@ -13,6 +13,9 @@ fs.readdir(
         const pathToItem = path.join(__dirname, "secret-folder", item.name);
         fs.stat(pathToItem, (err, { size }) => {
           console.log(`${name} - ${extension} - ${size}b`);
+          if (err) {
+            console.error(err);
+          }
         });
       }
     }

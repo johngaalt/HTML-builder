@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { stdin, stdout, exit } = require("process");
 
-stdout.write("Добавь своих каракуль:\n");
+stdout.write("Введите текст:\n");
 
 stdin.on("data", (data) => {
   if (data.toString("utf-8").trim() === "exit") {
