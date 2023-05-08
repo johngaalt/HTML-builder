@@ -14,7 +14,7 @@ async function copyDirectory() {
     await mkdir(destination, { recursive: true });
   }
 
-  // Удаляем старые файлы
+  // Удаляем старые файлы 
   const files = await readdir(destination);
   for (const file of files) {
     const filePath = join(destination, file);
